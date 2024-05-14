@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import imgHomens from './homens.jpg';
+import imgMulhes from './mulheres.jpg';
 
 function GenderCounter({ label, gender, count, increment, decrement }) {
     return (
@@ -8,7 +10,7 @@ function GenderCounter({ label, gender, count, increment, decrement }) {
                 <h1>{label}</h1>
             </div>
             <div className="image-container">
-                <img src={`/${gender}.jpg`} alt={gender} className="image" />
+                <img src={gender === 'homem' ? imgHomens : imgMulhes} alt={gender} className="image" />
                 <div className="button-group">
                     <button className="button incre" onClick={() => increment(gender)}>+</button>
                     <button className="button decre" onClick={() => decrement(gender)}>-</button>
