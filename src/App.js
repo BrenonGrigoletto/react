@@ -1,22 +1,10 @@
 import React from 'react';
-import Relogio from './Relogio';
-import Letreiro from './Letreiro'
+import MinhasRotas from "./minhasRotas";
 
 function App() {
-  return (
-    <div className="App">
-      <Relogio />
-      {
-
-      }
-      <Letreiro/>
-    {
-
-    }
-    </div>
-
-
-  );
+    return (
+        <MinhasRotas />
+    );
 }
 
 export default App;
